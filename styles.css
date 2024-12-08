@@ -7,7 +7,7 @@ body {
     color: #333;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Ensures the body takes up at least the full height of the viewport */
 }
 
 /* Cover Section */
@@ -36,9 +36,9 @@ body {
 
 /* Name and Title */
 #name {
-    font-size: 1.2rem; /* Reduced name size */
+    font-size: 1.3rem; /* Reduced name size */
     font-weight: 700;
-    margin-top: -18px; /* Adds space between name and profile picture */
+    margin-top: 70px; /* Adds space between name and profile picture */
 }
 
 #title {
@@ -50,10 +50,9 @@ body {
 }
 
 #address {
-    font-size: 0.8rem; /* Reduced address size */
+    font-size: 0.9rem; /* Reduced address size */
     color: #777;
-    margin-top: -5px; /* Moves it closer to the title */
-    margin-bottom: 10px; /* Adds some space at the bottom */
+    margin-top: -15px;
 }
 
 #address i {
@@ -65,7 +64,7 @@ body {
     display: block;
     width: calc(100% - 40px);
     max-width: 400px;
-    margin: 20px auto; /* Adds more space between buttons */
+    margin: 10px auto;
     padding: 0.75rem;
     font-size: 1rem;
     font-weight: bold;
@@ -92,29 +91,21 @@ body {
     border: 2px solid #28a745;
 }
 
-/* Content Section */
-#content {
-    flex-grow: 1; /* Ensures the content takes up the remaining space */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-
 /* Footer */
 footer {
     text-align: center;
-    padding: 20px 10px;
+    padding: 10px 10px;  /* Adjusted padding */
     background-color: #fff;
     width: 100%;
-    margin-top: auto; /* Ensures the footer stays at the bottom */
+    margin-bottom: 50px;  /* Adjust margin to move footer up */
+    position: relative;  /* Ensures footer positioning */
 }
 
+/* Footer text styling */
 footer p {
     font-size: 1rem;
     font-weight: bold;
+    margin-top: -50px;
 }
 
 footer nav a {
